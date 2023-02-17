@@ -9,21 +9,35 @@ body{
     color: #232323;
 }
 
+.material-symbols-outlined{
+    vertical-align: middle;
+}
+
 .contenedor{
-    background: linear-gradient(#F37C70, #FC9B89);
+    /* background: #4C6673; */
+    background: #161E21;
     display: grid;
     justify-items: center;
 }
 
-.barra-nav{
+.header{
+    width: 100%;
+    /* background: linear-gradient(#F37C70, #FC9B89); */
+    background: linear-gradient(#ff0077, #ff00a2);
+    height: 65px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.header .barra-nav{
     width: 90%;
-    height: 40px;
+    height: 65px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
 }
 
 .menu img{
@@ -44,7 +58,8 @@ body{
     height: 30px;
     border: none;
     border-radius: 5px;
-    background: #5F7264;
+    /* background: #5F7264; */
+    background: #161E21;
 }
 
 .boton a{
@@ -54,3 +69,109 @@ body{
     text-align: center;
 }
 
+.jumbotron{
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "contacto sushi";
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.jumbotron .img-sushi{
+    grid-column: 2;
+}
+
+.jumbotron .contacto{
+    grid-column: 1;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 20px;
+}
+
+.contacto a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.contacto .descuento{
+    width: 265px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(#ff0077, #ff00a2);
+    text-align: center;
+}
+
+.contacto .cupon{
+    font-weight: 700;
+}
+
+.contacto .solucion{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.img-sushi img{
+    width: 960px;
+    height: auto;
+    border-radius: 50px 0px 0px 50px;
+    box-shadow: -5px 0px 15px rgba(255, 25, 133, .5);
+}
+
+.jumbotron .contacto{
+    grid-area: contacto;
+}
+
+.jumbotron .img-sushi{
+    grid-area: sushi;
+}
+
+.jumbotron h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.jumbotron .mejor-sushi{
+    font-weight: 700;
+}
+
+#mail{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 400px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(255, 25, 133, .5);
+}
+
+.contacto .formulario button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#00c8ff, #0095ff);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.contacto .formulario p{
+    padding-top: 15px;
+    font-size: 13.5px;
+}
+
+.contacto .formulario .condiciones{
+    font-weight: 700;
+}

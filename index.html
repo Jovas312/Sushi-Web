@@ -9,23 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>SUSHI</title>
 </head>
 <body>
     <div class="contenedor">
-        <header class="barra-nav">
-            <div class="menu">
-                <a href="#"><img src="/image/Sushi-logo.png" alt="Sushi Logo"></a>
-                <a href="#">Menu</a>
-                <a href="#">¿Quienes somos?</a>
-                <a href="#">Acerca de</a>
-            </div>
-            <div class="boton">
-                <button><a href="#">Inicar Sesión</a></button>
-            </div>
+        <header class="header">
+            <nav class="barra-nav">
+                <div class="menu">
+                    <a href="#"><img src="/image/Sushi-logo.png" alt="Sushi Logo"></a>
+                    <a href="#">Menu</a>
+                    <a href="#">¿Quienes somos?</a>
+                    <a href="#">Acerca de</a>
+                </div>
+                <div class="boton">
+                    <button><a href="#">Inicar Sesión</a></button>
+                </div>
+            </nav>
         </header>
-        <div class="Jumbotron">
-            
+        <div class="jumbotron">
+            <div class="contacto">
+                <button class="descuento"><a href="#">Cupón de descuento: <span class="cupon">SUSHI-2023</span><span class="material-symbols-outlined">chevron_right</span></a></button>
+                <h1>DISFRUTA DE NUESTRO<br><span class="mejor-sushi">MEJOR SUSHI</span></h1><br>
+                <h3>¿Desear comer un rico sushi pero no puedes salir de casa?<br><span class="solucion">Nosotros tenemos la solución.</span></h3>
+                <div class="formulario">
+                    <input type="email" name="Registra tu pedido" id="mail" placeholder="Registra tu pedido">
+                    <button type="submit">Enviar</button>
+                    <p>Una vez registrado tu pedido este tardara en llegar en aproximadamente 1 hora.
+                    <br>Aceptamos todas las tarjetas. <span class="condiciones">Conoce nuestros términos y condiciones.</span></p>
+                </div>
+            </div>
+            <div class="img-sushi">
+                <img src="https://images.pexels.com/photos/684965/pexels-photo-684965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sushi img">
+            </div>
         </div>
     </div>
 </body>
