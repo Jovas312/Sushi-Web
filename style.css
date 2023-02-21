@@ -85,11 +85,11 @@ body{
 }
 
 .jumbotron .img-sushi{
-    grid-column: sushi;
+    grid-area: sushi;
 }
 
 .jumbotron .contacto{
-    grid-column: contacto;
+    grid-area: contacto;
 }
 
 .contacto{
@@ -129,14 +129,6 @@ body{
     height: auto;
     border-radius: 50px 0px 0px 50px;
     box-shadow: -5px 0px 15px rgba(255, 25, 133, .5);
-}
-
-.jumbotron .contacto{
-    grid-area: contacto;
-}
-
-.jumbotron .img-sushi{
-    grid-area: sushi;
 }
 
 .jumbotron h1{
@@ -185,7 +177,7 @@ body{
 
 .productos{
     display: grid;
-    background: #fff;
+    background: #f6f6f6;
     width: 100%;
     height: 800px;
     justify-items: center;
@@ -311,4 +303,89 @@ body{
     font-size: 18px;
     font-weight: 700;
     vertical-align: middle;
+}
+
+.footer{
+    padding-top: 20px;
+    background: #f6f6f6;
+    width: 100%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "logos   nosotros  legal"
+                        "derechos derechos  derechos";
+}
+
+.footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #232323;
+    grid-area: logos;
+}
+
+.footer .redes-sociales a{
+    padding: 10px;
+    text-decoration: none;
+    color: #797979;
+}
+
+.redes-sociales a:hover{
+    color: #232323;
+}
+
+.footer .nosotros{
+    display: flex;
+    flex-direction: column;
+    grid-area: nosotros;
+    align-content: center;
+
+}
+
+.footer .nosotros a{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #797979;
+}
+
+.nosotros a:hover{
+    color: #232323;
+}
+
+.footer .nosotros h4{
+    padding-bottom: 5px;
+}
+
+.footer .legal{
+    display: flex;
+    flex-direction: column;
+    grid-area: legal;
+    align-content: space-around;
+
+}
+
+.footer .legal a{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #797979;
+}
+
+.legal a:hover{
+    color: #232323;
+}
+
+.footer .legal h4{
+    padding-bottom: 5px;
+}
+
+.footer .derechos{
+    padding: 20px;
+    display: flex;
+    grid-area: derechos;
+    align-content: center;
+    justify-content: center;
+    color: #797979;
 }
